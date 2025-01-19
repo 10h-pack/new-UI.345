@@ -1,3 +1,4 @@
+
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/UI/refs/heads/main/j53s8.lua"))()
  local window = library:new("6")  local Tab = window:Tab("6") 
 local section = Tab:section("前言必须查看!!!",true)
@@ -106,10 +107,6 @@ game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 section:Slider("移动速度", "", 1, 1, 100, false, function(Value)
      print(Value)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-              end)
-section:Slider("重力设置", "", 1, 1, 100, false, function(Value)
-     print(Value)
-game.Workspace.Gravity = Value
               end)                                                                                         local Tab = window:Tab("dex和spy")         local section = Tab:section("dex",false)
 section:Button("dex1", function()
          print("Button")
@@ -121,11 +118,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIlIlIlIlIlIlIlIlI
 local section = Tab:section("spy(小白更改)",false)
 section:Button("spy1", function()
          print("Button")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/refs/heads/main/spy%E6%B1%89%E5%8C%96%20(1).lua"))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/jsnwusiwksbsu/main/spy')))()
          end)
 section:Button("spy2", function()
          print("Button")
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/jsnwusiwksbsu/main/spy')))()
+getgenv().Spy="汉化Spy" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/refs/heads/main/spy%E6%B1%89%E5%8C%96%20(1).txt"))()
          end)
 local Tab = window:Tab("doors")
 local section = Tab:section("生成rush",false)
@@ -251,3 +248,13 @@ local section = Tab:section("luaware汉化",false)
 section:Button("luaware汉化", function()
          print("Button")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()                      end)
+local Tab = window:Tab("战争大亨")
+section:Button("剑客(要加roblox群组名称:剑客.)", function()
+    print("Button")
+Sword_Guest_V7 = "欢迎使用剑客V7"	
+Sword_Guest__V7 = "作者_初夏"	
+Sword_Guest___V7 = "剑客QQ群155160100"	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0neK/Hello/refs/heads/main/SG-V7"))()
+end)
+
+
