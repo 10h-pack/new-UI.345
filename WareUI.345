@@ -1,5 +1,5 @@
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/UI/refs/heads/main/j53s8.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/UI/refs/heads/main/jdjdjj53s8.lua"))()
  local window = library:new("6")  local Tab = window:Tab("6") 
 local section = Tab:section("前言必须查看!!!",true)
 section:Label("声明")
