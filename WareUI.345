@@ -100,14 +100,30 @@ section:Button("光影", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 end)
 local section = Tab:section("玩家更改",false)         
-section:Slider("跳跃高度", "", 1, 1, 100, false, function(Value)
+section:Slider("跳跃高度", "", 50, 1, 100, false, function(Value)
      print(Value)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value  
   end)
-section:Slider("移动速度", "", 1, 1, 100, false, function(Value)
+section:Slider("移动速度", "", 16, 1, 100, false, function(Value)
      print(Value)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-              end)                                                                                         local Tab = window:Tab("dex和spy")         local section = Tab:section("dex",false)
+              end)                    
+local Tab = window:Tab("剑客")
+local section = Tab:section("剑客",false)                               section:Button("执行", function()
+    print("Button")
+    Sword_Guest_V7 = "欢迎使用剑客V7"	
+Sword_Guest__V7 = "作者_初夏"	
+Sword_Guest___V7 = "剑客QQ群155160100"	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0neK/Hello/refs/heads/main/SG-V7"))()
+
+end) 
+local Tab = window:Tab("传送")
+local section = Tab:section("传送",false)    
+section:Button("执行脚本", function()
+    print("Button")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/new-UI.345/refs/heads/main/6%E8%84%9A%E6%9C%ACTeleport.lua"))()
+end)                      
+ local Tab = window:Tab("dex和spy")         local section = Tab:section("dex",false)
 section:Button("dex1", function()
          print("Button")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()                
@@ -248,13 +264,6 @@ local section = Tab:section("luaware汉化",false)
 section:Button("luaware汉化", function()
          print("Button")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()                      end)
-local Tab = window:Tab("战争大亨")
-section:Button("剑客(要加roblox群组名称:剑客.)", function()
-    print("Button")
-Sword_Guest_V7 = "欢迎使用剑客V7"	
-Sword_Guest__V7 = "作者_初夏"	
-Sword_Guest___V7 = "剑客QQ群155160100"	
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0neK/Hello/refs/heads/main/SG-V7"))()
-end)
+
 
 
