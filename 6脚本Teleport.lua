@@ -58,7 +58,7 @@ about:Button("传送到玩家旁边一次", function()
         HumRoot.CFrame = tp_player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
         Notify("6", "成功", "rbxassetid://", 5)
     else
-        Notify("6", "没有目标", "rbxassetid://107567680655744",5)
+        Notify("6", "没有目标", "rbxassetid://",5)
     end
 end)
 
@@ -67,9 +67,9 @@ about:Button("把玩家传送过来", function()
     local tp_player = game.Players:FindFirstChild(playernamedied)
     if tp_player and tp_player.Character and tp_player.Character.HumanoidRootPart then
         tp_player.Character.HumanoidRootPart.CFrame = HumRoot.CFrame + Vector3.new(0, 3, 0)
-        Notify("6", "已传送过来", "rbxassetid://107567680655744", 5)
+        Notify("6", "已传送过来", "rbxassetid://",5)
     else
-        Notify("6", "没有目标", "rbxassetid://", 1075676806557445)
+        Notify("6", "没有目标", "rbxassetid://",5)
     end
 end)
 
@@ -77,9 +77,9 @@ about:Toggle("查看玩家", 'Toggleflag', false, function(state)
     if state then
         game:GetService('Workspace').CurrentCamera.CameraSubject =
             game:GetService('Players'):FindFirstChild(playernamedied).Character.Humanoid
-            Notify("6", "已查看", "rbxassetid://107567680655744", 5)
+            Notify("6", "已查看", "rbxassetid://",5)
     else
-        Notify("6", "已关闭", "rbxassetid://107567680655744", 5)
+        Notify("6", "已关闭", "rbxassetid://",5)
         local lp = game.Players.LocalPlayer
         game:GetService('Workspace').CurrentCamera.CameraSubject = lp.Character.Humanoid
     end
@@ -108,7 +108,7 @@ about:Toggle("循环传送玩家", "Toggle", false, function(Value)
             end)
             
         else
-            Notify("6", "玩家或角色不存在，无法启动循环传送", "rbxassetid://107567680655744", 5)
+            Notify("6", "玩家或角色不存在，无法启动循环传送", "rbxassetid://",5)
         end
     else
         
@@ -116,7 +116,7 @@ about:Toggle("循环传送玩家", "Toggle", false, function(Value)
             teleportConnection:Disconnect()
             teleportConnection = nil
         end
-        Notify("6", "已停止循环传送玩家", "rbxassetid://107567680655744", 5)
+        Notify("6", "已停止循环传送玩家", "rbxassetid://",5)
     end
 end)
 
