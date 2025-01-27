@@ -1,0 +1,16 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/UI/refs/heads/main/OrionLib"))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+    Name = "极速传奇",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddToggle({
+    Name = "刷蓝色球",
+    Default = false,
+    Callback = function(Value)
+while Value do
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb","Blue Orb","City")
+task.wait(0.1)
+end
+end})
