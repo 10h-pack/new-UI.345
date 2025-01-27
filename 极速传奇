@@ -11,6 +11,15 @@ Tab:AddToggle({
     Callback = function(Value)
 while Value do
 game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb","Blue Orb","City")
-task.wait(0.1)
+task.wait(0.06)
+end
+end})
+Tab:AddToggle({
+    Name = "自动重生",
+    Default = false,
+    Callback = function(Value)
+while Value do
+game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer("rebirthRequest")
+task.wait(0.04)
 end
 end})
