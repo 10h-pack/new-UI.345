@@ -9,7 +9,7 @@ local msg = {
     ["embeds"] = {
         {
             ["color"] = tonumber(tostring("0x32CD32")),
-            ["title"] = "有人被黑名单拦截了",
+            ["title"] = "有人被黑名单拦截了,对方的资料已发送",
             ["thumbnail"] = {
                 ["url"] = AvatarImage
             },
