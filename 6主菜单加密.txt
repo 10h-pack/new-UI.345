@@ -128,7 +128,7 @@ Tab:AddButton({
 })   
 local Tab = Window:MakeTab({
     Name = "自做脚本",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://107567680655744",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -139,7 +139,7 @@ Tab:AddButton({
 })   
 local Tab = Window:MakeTab({
     Name = "群",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://107567680655744",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -165,14 +165,14 @@ Tab:AddButton({
     Time = 2
 })
 	end
-})   
-local Tab = Window:MakeTab({
-    Name = "反馈区"
-	Icon = "rbxassetid://4483345998",
+})     
+  local Tab = Window:MakeTab({
+    Name = "反馈区",
+	Icon = "rbxassetid://107567680655744",
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "执行(小白制作,柳絮提供Webhook URL)",
+	Name = "执行",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/qwaszxcv85/6jiaoben/refs/heads/main/%E5%8F%8D%E9%A6%88"))()
 	end
