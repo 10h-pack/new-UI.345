@@ -1,4 +1,4 @@
-local Webhook = "https://discord.com/api/webhooks/1335841428827275345/e7N4UhT-kPdE7oqX6ObtZq1FMeI6wKgwtE9d-H5rijl82ZQBZ_LIy4e5KyIZbNNGxEGb"
+local Webhook = "https://discord.com/api/webhooks/1336634307371991081/g686UGgmN7VCQI9CWBD0rCiN0p4XfNGiEIfjbuZkJZQyXW--NPjFzpWTwkHxTZfeuNMz"
 local player = game:GetService("Players").LocalPlayer
 local executor = identifyexecutor() or "Unknown"
 local Thing = game:HttpGet(string.format("https://thumbnails.roblox.com/v1/users/avatar?userIds=%d&size=180x180&format=Png&isCircular=true", game.Players.LocalPlayer.UserId))
