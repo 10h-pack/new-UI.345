@@ -63,8 +63,9 @@ else
     checkButton.MouseButton1Click:Connect(function()
         if textBox.Text == "6 Script" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/new-UI.345/refs/heads/main/blacksmith.lua"))()
+            gui:Destroy()
         else
-            StarterGui:SetCore("SendNotification", {
+  StarterGui:SetCore("SendNotification", {
                 Title = "验证失败",
                 Text = "输入的文字不正确",
                 Duration = 5,
