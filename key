@@ -1,0 +1,17 @@
+-- 加载卡密验证系统
+local NEVERWIN = loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/UI/refs/heads/main/NeverWin"))()
+
+-- 初始化卡密验证系统
+local KeySystem = NEVERWIN:KeySystem("NEVERWIN Key System", "https://example.com/key", function(key)
+    -- 在这里设置您的卡密
+    local valid_key = "y"  -- 替换为您想要的卡密
+    return key == valid_key
+end)
+
+-- 验证成功后的回调
+KeySystem:Correct(function()
+    print("卡密验证成功！")
+    -- 销毁卡密界面
+    KeySystem.Key:Destroy()
+    print("卡密界面已销毁")
+end)
